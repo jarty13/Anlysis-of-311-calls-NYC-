@@ -1,5 +1,5 @@
 # Project 
-* Analyzed 311 calls from the last two years to see if there were any seasonality to make staffing recommendations for dispatchers and agency workers
+* Analyzed 311 calls from the June 2016- June 2018  to make staffing recommendations for dispatchers and agency workers
 
 # Database set up and exploration 
 * Used NYC open data library to pull 311 calls for the last two years:
@@ -49,7 +49,7 @@
     complaints= db.relationship('Complaint',back_populates='borough')
   ```
 # Dash Dashboard
-Implemented Dash app to display finidngs based off of zipcode, and borough: 
+Deployed Dash app to display based off of zip code, and borough: : 
 
 ## Total calls 
 * Additional option to filter complaint by zip code
@@ -61,11 +61,11 @@ Implemented Dash app to display finidngs based off of zipcode, and borough:
 
 # Time series analysis for load noise complaint:
 ## Number of calls by hour
-* Highest number of calls come in from 10pm - 1am 
+* Highest number of calls come in from 10 pm - 1 am 
 <img src="https://github.com/jarty13/Anlysis-of-311-calls-NYC-/blob/master/image/Call%20by%20hour.png" width="450" height="350">
 
 ## Number of calls by month
-* Calls peak during the summer month with June having the highest amount of calls 
+* Calls peak during the summer month with June having the highest number of calls 
 <img src="https://github.com/jarty13/Anlysis-of-311-calls-NYC-/blob/master/image/Calls%20by%20month.png" width="450" height="350">
 
 ## Number of calls by DOW
@@ -74,12 +74,12 @@ Implemented Dash app to display finidngs based off of zipcode, and borough:
 
 # Results and Findings:
 ## Loud Noise: 
-* Overall Loud Music/Partying had the highest volume of calls among all boroughs. With Brooklyn and Manhattan having the most. We saw areas such as the East Village and Williamsburg neighborhoods were some of the loudest neighborhoods 
-* Loud noise complaints starts to peak from May- September when it becomes warmer, school's  are out and there are more activities to do outside. June is the highest month with calls, and it starts to dip in August but picks back up in September when Universities are back in session
+* Overall Loud Music/Partying had the highest volume of calls among all boroughs. With Brooklyn and Manhattan having the most noise complaints. We saw trendy areas such as the East Village and Williamsburg neighborhoods were some of the loudest neighborhoods. 
+* Loud noise complaints start to peak from May - September when it becomes warmer, the school's are out and there are more activities to do outside. June is the highest month with calls, and it starts to dip in August but picks back up in September when Universities are back in session.
 * High majority of calls tend to be placed during 10 pm- 1 am through Friday and Saturday. 
-* Recommend higher staff to receive call columns during the summer months, 10pm-1am on weekends, as well as the NYPD since they are the agency to investigate the calls 
+* Recommend increasing staffing during the summer months, 10pm-1am on weekends.
 ## For one address: 
-* New York has a policy if you are a property owner, you can request to have a tree planted on your street for free! The highest amount of calls for this request came in Brooklyn, Queens, and Staten Island.Wwe saw a higher frequency of calls Staten Island and Brooklyn since they are areas with more space to plant trees in the area 
+* New York has a policy if you are a property owner, you can request to have a tree planted on your street for free! The highest amount of calls for this request came in Brooklyn, Queens, and Staten Island. We saw a higher frequency of calls Staten Island and Brooklyn since they are areas with more space to plant trees 
 * Recommend having more personal in Staten Island and Brooklyn to be available to plant the trees versus other boroughs
 * With requesting Large Appliance /Electronic removal, the only area we saw a majority of the calls come through Staten Island since residents of Brooklyn, Western Queens can request free curbside pick up of their appliances.
 ## Other Complaints: 
